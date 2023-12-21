@@ -4,235 +4,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chocolate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
-<header>
-<nav>
-    <a href="./index.html"> 
-        SIMPLY CHOCOLATE
-    <img src="images/logo.svg" alt="chocolare icon" />
+    <!--Header-->
+<header class="header">
+<nav class="header-navigation">
+    <a class="header-link" href="./index.html"> 
+       <span class="header-logo-italic">SIMPLY</span>  CHOCOLATE
+    <img class="header-img" src="images/chocolate.svg" alt="chocolare icon" />
 </a>
-   <ul>
-<li> 
-    <a href="">Home</a>
+<!--Header menu-->
+   <ul class="header-menu-list">
+<li class="header-menu-item"> 
+    <a class="header-menu-link" href="">Home</a>
 </li>
-<li>
-    <a href="">How it is made?</a>
+<li class="header-menu-item">
+    <a class="header-menu-link" href="">How it is made?</a>
 </li>
-<li>
-    <a href="">Chocolate is loved</a>
+<li class="header-menu-item">
+    <a class="header-menu-link" href="">Chocolate is loved</a>
 </li>
    </ul>
 </nav>
-<ul>
-    <li> <a href="" target="_blank" rel="noopener noreferrer">insta</a></li>
-    <li> <a href="" target="_blank" rel="noopener noreferrer">fb</a></li>
-    <li> <a href="" target="_blank" rel="noopener noreferrer">twit</a></li>
+<!--Header list-->
+<ul class="header-list">
+    <li class="header-list-item"> <a class="header-list-limk" href="" target="_blank" rel="noopener noreferrer">insta</a></li>
+    <li class="header-list-item"> <a class="header-list-limk" href="" target="_blank" rel="noopener noreferrer">fb</a></li>
+    <li class="header-list-item"> <a class="header-list-limk" href="" target="_blank" rel="noopener noreferrer">twit</a></li>
 </ul>
 </header>
-<main>
+<main class="main">
     <!--Section-->
-    <section>
-        <p>
+    <section class="hero">
+        <h1 class="hero-title">
             Treat yourself or a loved one to 
             our finest ingredients for a moment 
             of pure delight!
-        </p>
-        <button>Buy now</button>
-        <button>How it is made</button>
+        </h1>
+        <button type="button" class="hero-buy-btn">Buy now</button>
+        <a href="#made" class="hero-made-btn">How it is made</a>
+        <a href="" class="hero-down-btn">scroll down</a>
+
     </section>
     <!--Section1-->
-    <section>
-        <h2>section</h2>
-<ul>
-    <li>
-        <h3>Unsurpassed taste</h3>
-        <p>Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
+    <section class="features">
+        <h2 class="visually-hidden">features</h2>
+<ul class="features-list">
+    <li class="features-item">
+        <h3 class="features-subtitle">Unsurpassed taste</h3>
+        <p class="feature-item-text"> Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
     </li>
-    <li>
-        <h3>Affordable price</h3>
-        <p>Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
+    <li class="features-item">
+        <h3 class="features-subtitle">Affordable price</h3>
+        <p class="feature-item-text">Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
     </li>
-    <li>
-        <h3>Own production</h3>
-        We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.
+    <li class="features-item">
+        <h3 class="features-subtitle">Own production</h3>
+        <p class="feature-item-text">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
     </li>
 </ul>
 </section>
 <!--Section2-->
-<section>
-    <h2>IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION</h2>
-    <p>At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
-<ul>
-    <li>
+<section class="taste">
+    <h2 class="taste-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION</h2>
+    <p class="taste-text">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
+<ul class="title-list">
+    <li class="taste-item">
         <img src="images/section2-3/img-1.jpg" alt="MILK CHOCOLATE"/>
-        <h3>MILK CHOCOLATE</h3>
+        <h3 class="taste-subtitle"> MILK CHOCOLATE</h3>
     </li>
-    <li>
+    <li class="taste-item">
         <img src="images/section2-3/img-2.jpg" alt="MILK"/>
-        <h3>MILK</h3>
+        <h3 class="taste-subtitle">MILK</h3>
     </li>
-    <li>
+    <li class="taste-item">
         <img src="images/section2-3/img-3.jpg" alt="NUTS"/>
-        <h3>NUTS</h3>
+        <h3 class="taste-subtitle">NUTS</h3>
     </li>
-    <li>
+    <li class="taste-item">
         <img src="images/section2-3/img-4.jpg" alt="SEMI - SWEET CHOCOLATE"/>
-        <h3>SEMI - SWEET CHOCOLATE</h3>
+        <h3 class="taste-subtitle">SEMI - SWEET CHOCOLATE</h3>
     </li>
-    <li>
+    <li class="taste-item">
         <img src="images/section2-3/img-5.jpg" alt="CACAO"/>
-        <h3>CACAO</h3>
+        <h3 class="taste-subtitle">CACAO</h3>
     </li>
-    <li>
+    <li class="taste-item">
         <img src="images/section2-3/img-6.jpg" alt="RASPBERRY"/>
-        <h3>RASPBERRY</h3>
+        <h3 class="taste-subtitle">RASPBERRY</h3>
     </li>
-    <li>
+    <li class="taste-item">
         <img src="images/section2-3/img-7.jpg" alt="COCONUT"/>
-        <h3>COCONUT OIL</h3>
+        <h3 class="taste-subtitle">COCONUT OIL</h3>
     </li>
 </ul>
 </section>
 <!--Section3-->
-<section>
-    <h2> hOW IT is made?</h2>
-    <p>Try  our chocolates today and discover the perfect balance of flavor</p>
+<section class="made">
+    <h2 class="made-title"> HOW IT IS <span>MADE?</span></h2>
     <img src="images/section2-3/image.jpg" alt="dark_chocolate"/>
-<ul>
-<li>
-    <p>Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</p>
+    <h3 class="made-subtitle">Try  our chocolates today and discover the perfect balance of flavor</h3>
+    <ul class="made-list">
+<li class="made-item">
+    <p class="made-item-text">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</p>
 </li>
-<li>
-    <p>At the same time, prepare a water bath. Melt the butter on it.</p>
+<li class="made-item">
+    <p class="made-item-text">At the same time, prepare a water bath. Melt the butter on it.</p>
 </li>
-<li>
-    <p>"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</p>
+<li class="made-item">
+    <p class="made-item-text">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</p>
 </li>
-<li>
-    <p>Heat the mixture over low heat, letting it barely boil.</p>
+<li class="made-item">
+    <p class="made-item-text">Heat the mixture over low heat, letting it barely boil.</p>
 </li>
-<li>
-    <p>Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</p>
+<li class="made-item">
+    <p class="made-item-text">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</p>
 </li>
 </ul>
 </section>
 <!--Section4-->
-<section>
-    <ul>
-        <li>
+<section class="products">
+    <h2 class="products-title">OUR <span>PRODUCTS</span></h2>
+    <ul class="products-list">
+        <li class="product-item">
             <img src="images/section4/img-1.jpg" alt="ORANGE"/>
-            <h3>ORANGE</h3>
-            <p>Dark chocolate</p>
-            <button>45 UAH</button>
+            <h3 class="products-subtitle">ORANGE</h3>
+            <p class="products-item-text">Dark chocolate</p>
+            <button type="button" class="products-item-btn">45 UAH</button>
         </li>
-        <li>
+        <li class="product-item">
             <img src="images/section4/img-2.jpg" alt="APPLE&CRANBERRY"/>
-            <h3>APPLE&CRANBERRY</h3>
-            <p>Milk chocolate</p>
-            <button>50 UAH</button>
+            <h3 class="products-subtitle">APPLE&CRANBERRY</h3>
+            <p class="products-item-text">Milk chocolate</p>
+            <button type="button" class="products-item-btn">50 UAH</button>
         </li>
-        <li>
+        <li class="product-item">
             <img src="images/section4/img-3.jpg" alt="lime&sea salt"/>
-            <h3>lime&sea salt</h3>
-            <p>Dark chocolate</p>
-            <button>66 UAH</button>
+            <h3 class="products-subtitle">lime&sea salt</h3>
+            <p class="products-item-text">Dark chocolate</p>
+            <button type="button" class="products-item-btn">66 UAH</button>
         </li>
-        <li>
+        <li class="product-item">
             <img src="images/section4/img-4.jpg" alt="PINEAPPLE"/>
-            <h3>PINEAPPLE</h3>
-            <p>Dark chocolate</p>
-            <button>54 UAH</button>
+            <h3 class="products-subtitle">PINEAPPLE</h3>
+            <p class="products-item-text">Dark chocolate</p>
+            <button type="button" class="products-item-btn">54 UAH</button>
         </li>
-        <li>
+        <li class="product-item">
             <img src="images/section4/img-5.jpg" alt="Classic"/>
-            <h3>Classic</h3>
-            <p>Milk chocolate</p>
-            <button>45 UAH</button>
+            <h3 class="products-subtitle">Classic</h3>
+            <p class="products-item-text">Milk chocolate</p>
+            <button type="button" class="products-item-btn">45 UAH</button>
         </li>
-        <li>
+        <li class="product-item">
             <img src="images/section4/img-6.jpg" alt="Honey"/>
-            <h3>Honey</h3>
-            <p>Milk chocolate</p>
-            <button>50 UAH</button>
+            <h3 class="products-subtitle">Honey</h3>
+            <p class="products-item-text">Milk chocolate</p>
+            <button type="button" class="products-item-btn">50 UAH</button>
         </li>
-        <li>
+        <li class="product-item">
             <img src="images/section4/img-7.jpg" alt="Roasted fruits"/>
-            <h3>Roasted fruits</h3>
-            <p>Dark chocolate</p>
-            <button>66 UAH</button>
+            <h3 class="products-subtitle">Roasted fruits</h3>
+            <p class="products-item-text">Dark chocolate</p>
+            <button type="button" class="products-item-btn">66 UAH</button>
         </li>
-        <li>
+        <li class="product-item">
             <img src="images/section4/img-8.jpg" alt="Classic2"/>
-            <h3>Classic</h3>
-            <p>White chocolate</p>
-            <button>54 UAH</button>
+            <h3 class="products-subtitle">Classic</h3>
+            <p class="products-item-text">White chocolate</p>
+            <button type="button" class="products-item-btn">54 UAH</button>
         </li>
     </ul>
 </section>
 <!--Section5-->
-<section>
-<h2>Top Sellers</h2>
-<ul>
-    <li>
+<section class="sellers">
+<h2 class="sellers-title"><span>TOP</span> SELLERS</h2>
+<ul class="sellers-list">
+    <li class="sellers-list-item">
         <img src="images/section5/img-1.jpg" alt="CHOCOLATE WITH NUTS"/>
-        <h3>CHOCOLATE WITH NUTS</h3>
+        <h3 class="sellers-subtitle">CHOCOLATE WITH NUTS</h3>
     </li>
-    <li>
+    <li class="sellers-list-item">
         <img src="images/section5/img-2.jpg" alt="CHOCOLATE WITH FRUITS"/>
-        <h3>CHOCOLATE WITH FRUITS</h3>
+        <h3 class="sellers-subtitle">CHOCOLATE WITH FRUITS</h3>
     </li>
-    <li>
+    <li class="sellers-list-item">
         <img src="images/section5/img-3.jpg" alt="DARK CHOCOLATE"/>
-        <h3>DARK CHOCOLATE</h3>
+        <h3 class="sellers-subtitle">DARK CHOCOLATE</h3>
     </li>
 </ul>
 </section>
 <!--Section6-->
-<section>
-<h2>chocolate is loved</h2>
-<ul>
-<li>
+<section class="loved">
+<h2 class="loved-title"><span>CHOCOLATE</span> IS LOVED</h2>
+<ul class="loved-list">
+<li class="loved-list-item">
     <img src="images/section6/Ellipse1.jpg" alt="Victoria Dobrzhanska"/>
-    <h3>Victoria Dobrzhanska</h3>
-    <p>I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+    <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
+    <p class="loved-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
 </li>
-<li>
+<li class="loved-list-item">
     <img src="images/section6/Ellipse2.jpg" alt="Nazar Babenko"/>
-    <h3>Nazar Babenko</h3>
-    <p>This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+    <h3 class="loved-subtitle">Nazar Babenko</h3>
+    <p class="loved-text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
 </li>
-<li>
+<li class="loved-list-item">
     <img src="images/section6/Ellipse3.jpg" alt="Olena Kampusch"/>
-    <h3>Olena Kampusch</h3>
-    <p> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
+    <h3 class="loved-subtitle">Olena Kampusch</h3>
+    <p class="loved-text"> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
 </li>
 </ul>
 </section>
-<button>Leave a review</button>
+<button type="button" class="loved-item-btn">Leave a review</button>
 </main>
 
-<footer>
-    <p>Chocolate a delicious cure for a bad day</p>
-    <p>Social networks</p>
-    <ul>
-        <li> <a href="" target="_blank" rel="noopener noreferrer">insta</a></li>
-        <li> <a href="" target="_blank" rel="noopener noreferrer">fb</a></li>
-        <li> <a href="" target="_blank" rel="noopener noreferrer">twit</a></li>
+<footer class="footer">
+    <p class="footer-heading"><span>Chocolate</span> a delicious cure for a bad day</p>
+    <p class="footer-subtitle">Social networks</p>
+    <ul class="footer-soc-list">
+        <li class="footer-soc-item"> <a class="footer-soc-link" href="" target="_blank" rel="noopener noreferrer">insta</a></li>
+        <li class="footer-soc-item"> <a class="footer-soc-link" href="" target="_blank" rel="noopener noreferrer">fb</a></li>
+        <li class="footer-soc-item"> <a class="footer-soc-link" href="" target="_blank" rel="noopener noreferrer">twit</a></li>
     </ul>
-    <p>Contact us</p>
-    <a href="trl:+380684439426"> +380 (68) 443-94-26</a>
-    <a href="mailto:simplychoc@gmail.com"> simplychoc@gmail.com</a>
-    <nav>
-       <ul>
-    <li> 
-        <a href="">Home</a>
+    <p class="footer-subtitle">Contact us</p>
+    <address class="footer-address">
+    <ul class="footer-address-list">
+    <li class="footer-address-item"><a class="footer-address-link" href="trl:+380684439426"> +380 (68) 443-94-26</a></li>
+    <li class="footer-address-item"><a class="footer-address-link" href="mailto:simplychoc@gmail.com"> simplychoc@gmail.com</a></li>
+    </ul>
+    </address>
+    <nav class="footer-navigation">
+       <ul class="footer-menu-list">
+    <li class="footer-menu-item"> 
+        <a class="footer-menu-link" href="">Home</a>
     </li>
-    <li>
-        <a href="">How it is made?</a>
+    <li class="footer-menu-item">
+        <a class="footer-menu-link" href="">How it is made?</a>
     </li>
-    <li>
-        <a href="">Chocolate is loved</a>
+    <li class="footer-menu-item">
+        <a class="footer-menu-link" href="">Chocolate is loved</a>
     </li>
        </ul>
     </nav>
