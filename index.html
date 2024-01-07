@@ -17,9 +17,9 @@
     <!--Header-->
 
 <header class="header">
-    <div class="container">
+    <div class="container header-container">
 <nav class="header-navigation">
-    <a class="header-link" href="./index.html"> 
+    <a class="header-logo-link" href="./index.html"> 
        <span class="header-logo-italic">SIMPLY</span>  CHOCOLATE
     <img class="header-img" src="images/chocolate.svg" alt="chocolare icon" />
 </a>
@@ -38,12 +38,14 @@
 </nav>
 <!--Header list-->
 <ul class="header-list">
-    <li class="header-list-item"> <a class="header-list-limk" href="" target="_blank" rel="noopener noreferrer">insta</a></li>
-    <li class="header-list-item"> <a class="header-list-limk" href="" target="_blank" rel="noopener noreferrer">fb</a></li>
-    <li class="header-list-item"> <a class="header-list-limk" href="" target="_blank" rel="noopener noreferrer">twit</a></li>
+    <li class="header-list-item"> <a class="header-list-link" href="" target="_blank" rel="noopener noreferrer">insta</a></li>
+    <li class="header-list-item"> <a class="header-list-link" href="" target="_blank" rel="noopener noreferrer">fb</a></li>
+    <li class="header-list-item"> <a class="header-list-link" href="" target="_blank" rel="noopener noreferrer">twit</a></li>
 </ul>
 </div>
 </header>
+
+<!--------------------Main------------>
 <main class="main">
 
     <!--Section-->
@@ -55,16 +57,18 @@
             our finest ingredients for a moment 
             of pure delight!
         </h1>
+      <div class="hero-buttons">
         <button type="button" class="hero-buy-btn">Buy now</button>
         <a href="#made" class="hero-made-btn">How it is made</a>
         <a href="" class="hero-down-btn">scroll down</a>
-        </div>
+      </div> 
+    </div>
     </section>
 
     <!--Section1-->
 
     <section class="features">
-<div class="container">
+<div class="container features-container">
         <h2 class="visually-hidden">features</h2>
 <ul class="features-list">
     <li class="features-item">
@@ -89,33 +93,33 @@
 <div class="container">
     <h2 class="taste-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION</h2>
     <p class="taste-text">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
-<ul class="title-list">
+<ul class="taste-list">
     <li class="taste-item">
-        <img src="images/section2-3/img-1.jpg" alt="MILK CHOCOLATE"/>
+        <img class="taste-img" src="images/section2-3/img-1.jpg" alt="MILK CHOCOLATE"/>
         <h3 class="taste-subtitle"> MILK CHOCOLATE</h3>
     </li>
     <li class="taste-item">
-        <img src="images/section2-3/img-2.jpg" alt="MILK"/>
+        <img class="taste-img" src="images/section2-3/img-2.jpg" alt="MILK"/>
         <h3 class="taste-subtitle">MILK</h3>
     </li>
     <li class="taste-item">
-        <img src="images/section2-3/img-3.jpg" alt="NUTS"/>
+        <img class="taste-img" src="images/section2-3/img-3.jpg" alt="NUTS"/>
         <h3 class="taste-subtitle">NUTS</h3>
     </li>
     <li class="taste-item">
-        <img src="images/section2-3/img-4.jpg" alt="SEMI - SWEET CHOCOLATE"/>
+        <img class="taste-img" src="images/section2-3/img-4.jpg" alt="SEMI - SWEET CHOCOLATE"/>
         <h3 class="taste-subtitle">SEMI - SWEET CHOCOLATE</h3>
     </li>
     <li class="taste-item">
-        <img src="images/section2-3/img-5.jpg" alt="CACAO"/>
+        <img class="taste-img" src="images/section2-3/img-5.jpg" alt="CACAO"/>
         <h3 class="taste-subtitle">CACAO</h3>
     </li>
     <li class="taste-item">
-        <img src="images/section2-3/img-6.jpg" alt="RASPBERRY"/>
+        <img class="taste-img" src="images/section2-3/img-6.jpg" alt="RASPBERRY"/>
         <h3 class="taste-subtitle">RASPBERRY</h3>
     </li>
     <li class="taste-item">
-        <img src="images/section2-3/img-7.jpg" alt="COCONUT"/>
+        <img class="taste-img" src="images/section2-3/img-7.jpg" alt="COCONUT"/>
         <h3 class="taste-subtitle">COCONUT OIL</h3>
     </li>
 </ul>
@@ -125,27 +129,32 @@
 <!--Section3-->
 
 <section class="made">
-<div class="container">
-    <h2 class="made-title"> HOW IT IS <span>MADE?</span></h2>
-    <img src="images/section2-3/image.jpg" alt="dark_chocolate"/>
-    <h3 class="made-subtitle">Try  our chocolates today and discover the perfect balance of flavor</h3>
-    <ul class="made-list">
-<li class="made-item">
-    <p class="made-item-text">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</p>
-</li>
-<li class="made-item">
-    <p class="made-item-text">At the same time, prepare a water bath. Melt the butter on it.</p>
-</li>
-<li class="made-item">
-    <p class="made-item-text">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</p>
-</li>
-<li class="made-item">
-    <p class="made-item-text">Heat the mixture over low heat, letting it barely boil.</p>
-</li>
-<li class="made-item">
-    <p class="made-item-text">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</p>
-</li>
-</ul>
+<div class="container made-container">
+<h2 class="made-title"> HOW IT IS <span>MADE?</span></h2>
+<div class="made-wrap">
+        <img class="made-img" src="images/section2-3/image.jpg" alt="dark_chocolate"/>
+        <div class="made-content">
+        <h3 class="made-subtitle">Try  our chocolates today and discover the perfect balance of flavor</h3>
+        <ul class="made-list">
+            <li class="made-item">
+                <p class="made-item-text">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</p>
+            </li>
+            <li class="made-item">
+                <p class="made-item-text">At the same time, prepare a water bath. Melt the butter on it.</p>
+            </li>
+            <li class="made-item">
+                <p class="made-item-text">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</p>
+            </li>
+            <li class="made-item">
+                <p class="made-item-text">Heat the mixture over low heat, letting it barely boil.</p>
+            </li>
+            <li class="made-item">
+                <p class="made-item-text">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</p>
+            </li>
+            </ul>
+            </div>
+
+</div>
 </div>
 </section>
 
@@ -156,49 +165,49 @@
     <h2 class="products-title">OUR <span>PRODUCTS</span></h2>
     <ul class="products-list">
         <li class="product-item">
-            <img src="images/section4/img-1.jpg" alt="ORANGE"/>
+            <img class="product-img" src="images/section4/img-1.jpg" alt="ORANGE"/>
             <h3 class="products-subtitle">ORANGE</h3>
             <p class="products-item-text">Dark chocolate</p>
             <button type="button" class="products-item-btn">45 UAH</button>
         </li>
         <li class="product-item">
-            <img src="images/section4/img-2.jpg" alt="APPLE&CRANBERRY"/>
+            <img class="product-img" src="images/section4/img-2.jpg" alt="APPLE&CRANBERRY"/>
             <h3 class="products-subtitle">APPLE&CRANBERRY</h3>
             <p class="products-item-text">Milk chocolate</p>
             <button type="button" class="products-item-btn">50 UAH</button>
         </li>
         <li class="product-item">
-            <img src="images/section4/img-3.jpg" alt="lime&sea salt"/>
+            <img class="product-img" src="images/section4/img-3.jpg" alt="lime&sea salt"/>
             <h3 class="products-subtitle">lime&sea salt</h3>
             <p class="products-item-text">Dark chocolate</p>
             <button type="button" class="products-item-btn">66 UAH</button>
         </li>
         <li class="product-item">
-            <img src="images/section4/img-4.jpg" alt="PINEAPPLE"/>
+            <img class="product-img" src="images/section4/img-4.jpg" alt="PINEAPPLE"/>
             <h3 class="products-subtitle">PINEAPPLE</h3>
             <p class="products-item-text">Dark chocolate</p>
             <button type="button" class="products-item-btn">54 UAH</button>
         </li>
         <li class="product-item">
-            <img src="images/section4/img-5.jpg" alt="Classic"/>
+            <img class="product-img" src="images/section4/img-5.jpg" alt="Classic"/>
             <h3 class="products-subtitle">Classic</h3>
             <p class="products-item-text">Milk chocolate</p>
             <button type="button" class="products-item-btn">45 UAH</button>
         </li>
         <li class="product-item">
-            <img src="images/section4/img-6.jpg" alt="Honey"/>
+            <img class="product-img" src="images/section4/img-6.jpg" alt="Honey"/>
             <h3 class="products-subtitle">Honey</h3>
             <p class="products-item-text">Milk chocolate</p>
             <button type="button" class="products-item-btn">50 UAH</button>
         </li>
         <li class="product-item">
-            <img src="images/section4/img-7.jpg" alt="Roasted fruits"/>
+            <img class="product-img" src="images/section4/img-7.jpg" alt="Roasted fruits"/>
             <h3 class="products-subtitle">Roasted fruits</h3>
             <p class="products-item-text">Dark chocolate</p>
             <button type="button" class="products-item-btn">66 UAH</button>
         </li>
         <li class="product-item">
-            <img src="images/section4/img-8.jpg" alt="Classic2"/>
+            <img class="product-img" src="images/section4/img-8.jpg" alt="Classic2"/>
             <h3 class="products-subtitle">Classic</h3>
             <p class="products-item-text">White chocolate</p>
             <button type="button" class="products-item-btn">54 UAH</button>
@@ -214,16 +223,22 @@
 <h2 class="sellers-title"><span>TOP</span> SELLERS</h2>
 <ul class="sellers-list">
     <li class="sellers-list-item">
-        <img src="images/section5/img-1.jpg" alt="CHOCOLATE WITH NUTS"/>
+        <img class="sellers-img" src="images/section5/img-1.jpg" alt="CHOCOLATE WITH NUTS"/>
+       <div class="sellers-subtitle-wrap">
         <h3 class="sellers-subtitle">CHOCOLATE WITH NUTS</h3>
+       </div>
     </li>
     <li class="sellers-list-item">
-        <img src="images/section5/img-2.jpg" alt="CHOCOLATE WITH FRUITS"/>
+        <img class="sellers-img" src="images/section5/img-2.jpg" alt="CHOCOLATE WITH FRUITS"/>
+       <div class="sellers-subtitle-wrap" >
         <h3 class="sellers-subtitle">CHOCOLATE WITH FRUITS</h3>
+       </div>
     </li>
     <li class="sellers-list-item">
-        <img src="images/section5/img-3.jpg" alt="DARK CHOCOLATE"/>
+        <img class="sellers-img" src="images/section5/img-3.jpg" alt="DARK CHOCOLATE"/>
+       <div class="sellers-subtitle-wrap" >
         <h3 class="sellers-subtitle">DARK CHOCOLATE</h3>
+       </div>
     </li>
 </ul>
 </div>

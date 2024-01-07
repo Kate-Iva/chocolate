@@ -1,18 +1,23 @@
 body {
     font-family: "montserrat", sans-serif;
+    background: #FAFAFA;
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 ul {
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 0;
+    padding: 0;
 }
 p, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0;
+}
+img {
+    display: block;
 }
 button {
     cursor: pointer;
@@ -41,17 +46,44 @@ address {
     overflow: hidden;
     }
 /*------HEADER LOGO-------*/
-.headert {
+.header {
     padding-top: 24px;
     padding-bottom: 32px;
 }
-.header-link {
+ .header-container {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+ }
+.header-navigation {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo-link {
     color: #111;
 font-size: 18px;
 font-weight: 700;
 line-height: 1.11;
 letter-spacing: -0.03em;
+display: flex;
+align-items: center;
+gap: 4px;
 }
+
+.header-logo-italic {
+    font-style: italic;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 24px;
+}
+.header-menu-item {
+
+}
+
 .header-menu-link {
     color: #111;
 font-size: 14px;
@@ -60,14 +92,23 @@ line-height: 1.14;
 letter-spacing: -0.02em;
 }
 
-.header-logo-italic {
-    font-style: italic;
-}
-
 .header-menu-link:hover,
 .header-menu-link:focus,
 .header-menu-link:active{
 color: #FD9222;
+}
+
+.header-list {
+    display: flex;
+    gap: 14px;
+}
+.header-list-item {
+
+}
+
+.header-list-link {
+    
+
 }
 
 /*------HERO-------*/
@@ -96,14 +137,24 @@ font-family: Montserrat;
 font-size: 14px;
 font-style: normal;
 font-weight: 600;
+border-radius: 100px;
+background: #FD9222;
+border: none;
 line-height: normal;
 cursor: pointer;
+padding: 14px 40px;
+margin-right: 14px;
 }
+
 .hero-made-btn {
     color: #FFF;
 font-size: 14px;
 font-weight: 600;
 line-height: normal;
+border-radius: 100px;
+border: 1px solid #FFF;
+background-color: transparent;
+padding: 14px 40px;
 }
 
 .hero-down-btn {
@@ -112,7 +163,16 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.29;
 letter-spacing: -0.03em;
+margin-left: auto;
 }
+.hero-buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
 
 /*------FEATURES-------*/
 .features {
@@ -121,8 +181,13 @@ letter-spacing: -0.03em;
     padding-bottom: 50px;
 }
 .features-list {
+    display: flex;
+    gap: 88px;
+    padding-right: 18px;
+    padding-left: 18px;
 }
 .features-item {
+    width: calc((100% - 88px * 2) / 3);
 }
 .features-subtitle {
     color: #FFF;
@@ -139,7 +204,8 @@ letter-spacing: -0.02em;
 }
 
 
-/*------FEATURES-------*/
+/*------TASTE------*/
+
 .taste {
     padding-top: 120px;
    
@@ -169,10 +235,24 @@ margin-bottom: 28px;
     letter-spacing: -0.02em;
     width: 486px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
-.title-list {
+.taste-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 24px;
 }
 .taste-item {
+    border-radius: 15px;
+border: 1px solid #FD9222;
+background: #FFF;
+width: calc((100% - 32px * 3) / 4);
+padding: 28px 23px;
+}
+.taste-img {
+    margin: 0 auto;
+    margin-bottom: 36px;
 }
 .taste-subtitle {
     color: #111;
@@ -180,12 +260,15 @@ font-size: 14px;
 font-weight: 600;
 line-height: 1.28;
 letter-spacing: -0.02em;
-
+padding-left: 5px;
 }
 
 /*------MADE-------*/
 .made {
     padding-top: 120px;
+}
+.made-container {
+
 }
 
 .made-title span {
@@ -199,16 +282,35 @@ font-weight: 600;
 line-height: 1.17;
 letter-spacing: -0.03em;
 text-transform: uppercase;
+margin-bottom: 50px;
+}
+.made-wrap {
+display: flex;
+gap: 20px;
+}
+
+.made-content {
+    padding: 32px;
+    border-radius: 15px;
+background: #FFF;
+
+}
+
+.made-img {
+
 }
 .made-subtitle {
     color: #111;
 font-size: 18px;
 font-weight: 600;
 line-height: 1.33; 
+margin-bottom: 28px;
 }
 .made-list {
+    
 }
 .made-item {
+    margin-bottom: 24px;
 }
 .made-item-text {
     color: #111;
@@ -216,10 +318,12 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.29;
 letter-spacing: -0.02em;
+
 }
 
 /*------PRODUCTS-------*/
 .products {
+    padding-top: 120px;
 }
 .products-title span{
     color: #FD9222;
@@ -232,11 +336,27 @@ font-weight: 600;
 line-height: 1.17;
 letter-spacing: -0.03em;
 text-transform: uppercase;
+max-width: 350px;
+margin: 0 auto;
+margin-bottom: 50px;
 }
 .products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 18px;
 }
 .product-item {
+    border-radius: 15px;
+border: 1px solid rgba(17, 17, 17, 0.10);
+background: #FFF;
+    width: calc((100% - 18px * 3) / 4);
+    padding: 32px 20px;
 }
+.product-img {
+   margin: 0 auto; 
+   margin-bottom: 8px;
+}
+
 .products-subtitle {
     color: #111;
 font-size: 18px;
@@ -244,6 +364,9 @@ font-weight: 600;
 line-height: 1.33;
 letter-spacing: -0.02em;
 text-transform: uppercase;
+margin: 0 auto;
+margin-bottom: 5px;
+text-align: center;
 }
 .products-item-text {
     color: rgba(17, 17, 17, 0.70);
@@ -251,6 +374,9 @@ font-size: 12px;
 font-weight: 400;
 line-height: 1.17;
 letter-spacing: -0.02em;
+margin: 0 auto;
+margin-bottom: 18px;
+text-align: center;
 }
 
 .products-item-btn {
@@ -258,20 +384,41 @@ color: #111;
 font-size: 14px;
 font-weight: 600;
 line-height: normal;
+border-radius: 100px;
+border: 1px solid rgba(17, 17, 17, 0.10);
+background: #FAFAFA;
+padding: 8px 20px;
+margin: 0 auto;
+text-align: center;
+margin-left: 68px;
+
 }
 
 /*------SELLERS-------*/
 .sellers {
+    padding-top: 120px;
 }
 .sellers-title span{
     color: #FD9222;
 }
 
 .sellers-title {
-
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .sellers-list {
+    display: flex;
+    gap: 16px;
+
 }
 .sellers-list-item {
     color: #111;
@@ -279,12 +426,30 @@ font-size: 18px;
 font-weight: 600;
 line-height: 1.22;
 letter-spacing: -0.02em;
+width: calc((100% - 16px * 2) / 3);
 }
-/*text-transform: uppercase;*/
-/*------LOVED-------*/
+.sellers-img {
+
+}
+.sellers-subtitle-wrap {
+    border-radius: 0px 0px 15px 15px;
+border-right: 1px solid rgba(17, 17, 17, 0.10);
+border-bottom: 1px solid rgba(17, 17, 17, 0.10);
+border-left: 1px solid rgba(17, 17, 17, 0.10);
+background: #FFF;
+
+}
 .sellers-subtitle {
+    font-size: 18px;
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
 }
+
+/*------LOVED-------*/
 .loved {
+    padding-top: 120px;
 }
 .loved-title {
     color: #111;
@@ -292,11 +457,15 @@ text-align: center;
 font-size: 18px;
 font-weight: 600;
 line-height: 1.33;
+margin: 0 auto;
+margin-bottom: 50px;
+
 }
 .loved-title span{
     color: #FD9222;
 }
 .loved-list {
+    display: flex;
 }
 .loved-list-item {
 }
