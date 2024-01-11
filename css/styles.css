@@ -31,7 +31,7 @@ address {
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
+    outline: 2px solid #FD9222;
 }
 .visually-hidden {
     position: absolute;
@@ -108,7 +108,10 @@ color: #FD9222;
 
 .header-list-link {
     
+}
 
+.header-soc-link:hover {
+    fill: #FD9222;
 }
 
 /*------HERO-------*/
@@ -118,9 +121,15 @@ color: #FD9222;
     
 }
 .hero-container {
-    background-color: #766782;
+    background-color: #11111100, #111111;
     border-radius: 30px;
     padding: 381px 40px 40px 40px;
+    background-image: url(../images/fon/chocolate_main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+
 }
 .hero-title {
     color: #FFF;
@@ -188,6 +197,20 @@ margin-left: auto;
 }
 .features-item {
     width: calc((100% - 88px * 2) / 3);
+position: relative;
+}
+
+.features-item:not(:last-child)::after {
+    content: "";
+    width: 1px;
+    height: 124px;
+    display: block;
+    background-color: #FFF;
+    position: absolute;
+    right: -44px;
+    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .features-subtitle {
     color: #FFF;
@@ -311,6 +334,23 @@ margin-bottom: 28px;
 }
 .made-item {
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.made-item::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #111111;
+    border-radius: 50%;
+    border: 1px solid #eceded;
+    flex-shrink: 0;
+}
+
+.made-item:hover:before {
+background-color: #FD9222;;
 }
 .made-item-text {
     color: #111;
@@ -421,14 +461,44 @@ margin-left: 68px;
 
 }
 .sellers-list-item {
-    color: #111;
-font-size: 18px;
-font-weight: 600;
-line-height: 1.22;
-letter-spacing: -0.02em;
+padding-bottom: 28px;
 width: calc((100% - 16px * 2) / 3);
+position: relative;
+
 }
+
 .sellers-img {
+
+}
+
+.sellers-cover-wrap {
+    position: relative;
+    overflow: hidden;
+    
+}
+.sellers-text-wrap {
+    position: absolute;
+    border-radius: 15px 15px 0px 0px;
+background: linear-gradient(165deg, rgba(253, 253, 255, 0.10) 3.97%, rgba(8, 2, 21, 0.00) 109.76%);
+-webkit-backdrop-filter: blur(7.5px);
+    top: 0;
+display: flex;
+align-items: center;
+padding: 0 40px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+
+}
+
+
+.sellers-cover-text {
+    color: #FFF;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.29;
+letter-spacing: -0.02em;
+
 
 }
 .sellers-subtitle-wrap {
@@ -439,7 +509,12 @@ border-left: 1px solid rgba(17, 17, 17, 0.10);
 background: #FFF;
 
 }
+
+.sellers-list-item:hover .sellers-text-wrap {
+    transform: translateY(0);
+}
 .sellers-subtitle {
+    color: #111111;
     font-size: 18px;
     margin: 0 auto;
     padding-top: 28px;
