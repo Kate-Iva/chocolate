@@ -301,35 +301,74 @@
 <h2 class="loved-title"><span>CHOCOLATE</span> IS LOVED</h2>
 <ul class="loved-list">
 <li class="loved-list-item">
-    <img src="images/section6/Ellipse1.jpg" alt="Victoria Dobrzhanska"/>
+    <img class="loved-image" src="images/section6/Ellipse1.jpg" alt="Victoria Dobrzhanska"/>
     <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
     <p class="loved-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
 </li>
 <li class="loved-list-item">
-    <img src="images/section6/Ellipse2.jpg" alt="Nazar Babenko"/>
+    <img class="loved-image" src="images/section6/Ellipse2.jpg" alt="Nazar Babenko"/>
     <h3 class="loved-subtitle">Nazar Babenko</h3>
     <p class="loved-text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
 </li>
 <li class="loved-list-item">
-    <img src="images/section6/Ellipse3.jpg" alt="Olena Kampusch"/>
+    <img class="loved-image" src="images/section6/Ellipse3.jpg" alt="Olena Kampusch"/>
     <h3 class="loved-subtitle">Olena Kampusch</h3>
     <p class="loved-text"> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
 </li>
 </ul>
+<button type="button" class="loved-item-btn">Leave a review</button>
+
+
 </div>
 </section>
-<button type="button" class="loved-item-btn">Leave a review</button>
 </main>
 
 <footer class="footer">
 <div class="container">
+
+    <div class="footer-top">
+        <div class="footer-heading-block">
     <p class="footer-heading"><span>Chocolate</span> a delicious cure for a bad day</p>
+        </div>
+
+    <div class="footer-soc-block">
     <p class="footer-subtitle">Social networks</p>
     <ul class="footer-soc-list">
-        <li class="footer-soc-item"> <a class="footer-soc-link" href="" target="_blank" rel="noopener noreferrer">insta</a></li>
-        <li class="footer-soc-item"> <a class="footer-soc-link" href="" target="_blank" rel="noopener noreferrer">fb</a></li>
-        <li class="footer-soc-item"> <a class="footer-soc-link" href="" target="_blank" rel="noopener noreferrer">twit</a></li>
+
+        <li class="footer-soc-item"> 
+            <a class="footer-soc-link" 
+            href="" target="_blank" 
+            rel="noopener noreferrer">
+         <svg width="24" height="24" class="footer-soc-svg">
+            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+        </svg>
+        </a>
+        </li>
+    
+        <li class="footer-soc-item"> 
+            <a class="footer-soc-link" 
+            href="" target="_blank" 
+            rel="noopener noreferrer">
+            <svg width="24" height="24" class="footer-soc-svg">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+        </a>
+        </li>
+    
+        <li class="footer-soc-item"> 
+            <a class="footer-soc-link" 
+            href="" target="_blank" 
+            rel="noopener noreferrer">
+            <svg width="24" height="24" class="footer-soc-svg">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+        </a>
+        </li>
+    
     </ul>
+</div>
+
+<div class="footer-contacts-block" >
     <p class="footer-subtitle">Contact us</p>
     <address class="footer-address">
     <ul class="footer-address-list">
@@ -337,6 +376,10 @@
     <li class="footer-address-item"><a class="footer-address-link" href="mailto:simplychoc@gmail.com"> simplychoc@gmail.com</a></li>
     </ul>
     </address>
+</div>
+    </div>
+
+    <div class="footer-bottom">
     <nav class="footer-navigation">
        <ul class="footer-menu-list">
     <li class="footer-menu-item"> 
@@ -350,8 +393,19 @@
     </li>
        </ul>
     </nav>
+
+    <form class="footer-form">
+
+        <input type="email" name="footer-email" 
+        class="footer-input" placeholder="Enter your email"
+        aria-label="footer input"> 
+        <button type="submit" class="footer-subscribe-btn" >Subscribe</button> 
+    </form>
+    </div>
 </div>
 </footer>
+
+<!----BACKDROP----->
 <div class="backdrop">
     <div class="modal">
 <button type="button" class="model-close"> X </button>
@@ -374,7 +428,9 @@ id="user-name"/>
 </div>
 </div> 
 
+<div>
 <label for="email" class="modal-label">Email</label>
+<div class="modal-input-wrap">
 <input 
 type="email" 
 required
@@ -382,8 +438,15 @@ name="user-email"
 class="modal-input"
 placeholder="email"
 id="email"/>
+<svg class="modal-icon" width="24" height="24" >
+    <use href="./images/symbol-defs.svg#icon-mail"></use>
+</svg>
+</div>
+</div>
 
+<div>
 <label for="tel" class="modal-label">Phone number</label>
+<div class="modal-input-wrap">
 <input 
 type="tel" 
 required
@@ -391,6 +454,11 @@ name="user-tel"
 class="modal-input"
 placeholder="tel"
 id="tel"/>
+<svg class="modal-icon" width="24" height="24" >
+    <use href="./images/symbol-defs.svg#icon-phone"></use>
+</svg>
+</div>
+</div>
 
 <label for="user-comment" class="modal-label"> Comment
 <textarea name="user-comment" 
@@ -398,6 +466,16 @@ id="user-comment"
 class="modal-text"
 placeholder="Enter text"></textarea>
 </label>
+
+<div class="modal-field"> 
+    <input type="checkbox" name="policy" id="policy" 
+    class="check-input visually-hidden" value="true"/>
+    <label class="check-text" 
+    for="policy"> <span> <svg class="check-icon" width="10" height="10" >
+        <use href="./images/symbol-defs.svg#icon-check"></use>
+    </svg></span> I accept the terms and conditions of the 
+    <a href=""> Privacy Policy </a> </label>
+</div>
 <!-----exemple
 <input 
 type="range"   oboviazkovyi
