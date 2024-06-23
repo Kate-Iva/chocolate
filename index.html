@@ -18,34 +18,39 @@
 
 <header class="header">
     <div class="container header-container">
-<nav class="header-navigation">
+
     <a class="header-logo-link" href="./index.html"> 
        <span class="header-logo-italic">SIMPLY</span>  CHOCOLATE
     <img class="header-img" src="images/chocolate.svg" alt="chocolare icon" />
 </a>
-<a class="header-menu-link-mob" 
-            href="" target="_blank" 
-            rel="noopener noreferrer">
-         <svg width="32" height="32" class="header-menu-svg">
-            <use href="./images/symbol-defs.svg#menu"></use>
-        </svg>
-        </a>
 
+<button
+type="button"
+class="header-menu-link-mob"
+id="open-mobile-menu"
+name="Open mobile menu"
+>
+<svg class="header-menu-svg" width="28" height="28">
+  <use href="./images/symbol-defs.svg#menu"></use>
+</svg>
+</button>
 <!--Header menu-->
+
 <div class="header-desk">
+<nav class="header-navigation">
    <ul class="header-menu-list">
 <li class="header-menu-item"> 
     <a class="header-menu-link" href="">Home</a>
 </li>
 <li class="header-menu-item">
-    <a class="header-menu-link" href="">How it is made?</a>
+    <a class="header-menu-link" href="#made">How it is made?</a>
 </li>
 <li class="header-menu-item">
-    <a class="header-menu-link" href="">Chocolate is loved</a>
+    <a class="header-menu-link" href="#loved">Chocolate is loved</a>
 </li>
    </ul>
 </nav>
-<!--Header list-->
+<!--Header icons list-->
 <ul class="header-list">
 
     <li class="header-list-item"> 
@@ -81,6 +86,70 @@
 </ul>
 </div>
 </div>
+<!--mobile menu-->
+<div class="mobile-menu" id="mobile-menu">
+    <div class="mob-menu-wrap">
+      <button
+        type="button"
+        class="close-mobile-menu"
+        id="close-mobile-menu"
+        name="Close mobile menu"
+      >
+        <svg class="close-btn-icon" width="28" height="28">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+    
+
+    <nav class="mob-nav">
+      <ul class="mob-nav-list">
+        <li class="mob-nav-list-item">
+          <a href="" class="mob-nav-list-link">Home</a>
+        </li>
+        <li class="mob-nav-list-item">
+          <a href="#made" class="mob-nav-list-link"> How it is made?</a>
+        </li>
+        <li class="mob-nav-list-item">
+          <a href="#loved" class="mob-nav-list-link">Chocolate is loved</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="header-icons-list-mob">
+
+        <li class="header-list-item-mob"> 
+            <a class="header-list-link-mob" 
+            href="" target="_blank" 
+            rel="noopener noreferrer">
+         <svg width="24" height="24" class="header-soc-link-mob">
+            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+        </svg>
+        </a>
+        </li>
+    
+        <li class="header-list-item-mob"> 
+            <a class="header-list-link-mob" 
+            href="" target="_blank" 
+            rel="noopener noreferrer">
+            <svg width="24" height="24" class="header-soc-link-mob">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+        </a>
+        </li>
+    
+        <li class="header-list-item-mob"> 
+            <a class="header-list-link-mob" 
+            href="" target="_blank" 
+            rel="noopener noreferrer">
+            <svg width="24" height="24" class="header-soc-link-mob">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+        </a>
+        </li>
+    
+    </ul>
+</div>
+  </div>
 </header>
 
 <!--------------------Main------------>
@@ -96,13 +165,14 @@
             of pure delight!
         </h1>
       <div class="hero-buttons">
+        <div class="hero-buttons-right">
         <button type="button" class="hero-buy-btn">Buy now</button>
         <a href="#made" class="hero-made-btn">How it is made</a>
-      
+      </div>
         <div class="hero-down-block">
         <a href="" class="hero-down-btn">scroll down</a>
         <a class="hero-down-link" 
-            href="" target="_blank" 
+            href="#footer" target="" 
             rel="noopener noreferrer">
          <svg width="16" height="16" class="hero-down-svg">
             <use href="./images/symbol-defs.svg#icon-down"></use>
@@ -164,32 +234,117 @@
     <p class="taste-text">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
 <ul class="taste-list">
     <li class="taste-item">
+
+        <div class="card__front">
         <img class="taste-img" src="images/section2-3/img-1.jpg" alt="MILK CHOCOLATE"/>
         <h3 class="taste-subtitle"> MILK CHOCOLATE</h3>
+    </div>
+
+    <div class="card__back">
+<h3 class="taste-back-title">Milk chocolate</h3>
+<div class="taste-buttons">
+    <button type="button" class="taste-right-btn">chocolate</button>
+    <a href="" class="taste-benefits-btn">the benefits</a>
+  </div>
+<p class="taste-back-text">Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most consumed type of chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although four-fifths of all milk chocolate is sold in the United States and Europe.</p>
+    </div>
+
     </li>
     <li class="taste-item">
+        <div class="card__front">
         <img class="taste-img" src="images/section2-3/img-2.jpg" alt="MILK"/>
         <h3 class="taste-subtitle">MILK</h3>
+        </div>
+
+        <div class="card__back">
+            <h3 class="taste-back-title">Milk</h3>
+            <div class="taste-buttons">
+                <button type="button" class="taste-right-btn">milk </button>
+                <a href="" class="taste-benefits-btn">the benefits</a>
+              </div>
+            <p class="taste-back-text">Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen the immune system.</p>
+                </div>
+
     </li>
     <li class="taste-item">
+        <div class="card__front">
         <img class="taste-img" src="images/section2-3/img-3.jpg" alt="NUTS"/>
         <h3 class="taste-subtitle">NUTS</h3>
+        </div>
+
+        <div class="card__back">
+            <h3 class="taste-back-title">Nuts</h3>
+            <div class="taste-buttons">
+                <button type="button" class="taste-right-btn">nuts</button>
+                <a href="" class="taste-benefits-btn">the benefits</a>
+              </div>
+            <p class="taste-back-text">Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They’re a good source of fiber, healthy fats, and plant protein. Plus, they’re great on their own.</p>
+                </div>
+
     </li>
     <li class="taste-item">
+        <div class="card__front">
         <img class="taste-img" src="images/section2-3/img-4.jpg" alt="SEMI - SWEET CHOCOLATE"/>
         <h3 class="taste-subtitle">SEMI - SWEET CHOCOLATE</h3>
+        </div>
+
+        <div class="card__back">
+            <h3 class="taste-back-title">semi - sweet chocolatee</h3>
+            <div class="taste-buttons">
+                <button type="button" class="taste-right-btn">semi - sweet chocolate</button>
+                <a href="" class="taste-benefits-btn">the benefits</a>
+              </div>
+            <p class="taste-back-text">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter.</p>
+                </div>
+
     </li>
     <li class="taste-item">
+        <div class="card__front">
         <img class="taste-img" src="images/section2-3/img-5.jpg" alt="CACAO"/>
         <h3 class="taste-subtitle">CACAO</h3>
+        </div>
+
+    <div class="card__back">
+<h3 class="taste-back-title">cacao</h3>
+<div class="taste-buttons">
+    <button type="button" class="taste-right-btn">cacao</button>
+    <a href="" class="taste-benefits-btn">the benefits</a>
+  </div>
+<p class="taste-back-text">Cocoa is a natural product obtained from the fruits of the cocoa tree (Theobroma cacao). This tropical fruit contains beans, from which cocoa mass, cocoa powder and chocolate are made. The history of the use of cocoa goes back to ancient times. Already in ancient Mesoamerica, the Mayan and Aztec civilizations used cocoa in their culture and rituals</p>
+    </div>
+
     </li>
     <li class="taste-item">
+        <div class="card__front">
         <img class="taste-img" src="images/section2-3/img-6.jpg" alt="RASPBERRY"/>
         <h3 class="taste-subtitle">RASPBERRY</h3>
+        </div>
+
+        <div class="card__back">
+            <h3 class="taste-back-title">raspberry</h3>
+            <div class="taste-buttons">
+                <button type="button" class="taste-right-btn">raspberry</button>
+                <a href="" class="taste-benefits-btn">the benefits</a>
+              </div>
+            <p class="taste-back-text">Raspberry is a tasty and aromatic berry plant that is popular all over the world. It belongs to the pink family and grows in many regions, including North America, Europe and Asia. Raspberries have many varieties and color variations, from red to yellow and black.</p>
+                </div>
+
     </li>
     <li class="taste-item">
+        <div class="card__front">
         <img class="taste-img" src="images/section2-3/img-7.jpg" alt="COCONUT"/>
         <h3 class="taste-subtitle">COCONUT OIL</h3>
+        </div>
+
+    <div class="card__back">
+<h3 class="taste-back-title">COCONUT OIL</h3>
+<div class="taste-buttons">
+    <button type="button" class="taste-right-btn">coconut oil</button>
+    <a href="" class="taste-benefits-btn">the benefits</a>
+  </div>
+<p class="taste-back-text">Cocoa is a natural product obtained from the fruits of the cocoa tree (Theobroma cacao). This tropical fruit contains beans, from which cocoa mass, cocoa powder and chocolate are made. The history of the use of cocoa goes back to ancient times. Already in ancient Mesoamerica, the Mayan and Aztec civilizations used cocoa in their culture and rituals</p>
+    </div>
+
     </li>
 </ul>
 </div>
@@ -197,7 +352,7 @@
 
 <!--Section3-->
 
-<section class="made">
+<section class="made" id="made">
 <div class="container made-container">
 <h2 class="made-title"> HOW IT IS <span>MADE?</span></h2>
 <div class="made-wrap">
@@ -337,7 +492,7 @@
 
 <!--Section6-->
 
-<section class="loved">
+<section class="loved" id="loved">
 <div class="container loved_container">
 <h2 class="loved-title"><span>CHOCOLATE</span> IS LOVED</h2>
 <ul class="loved-list">
@@ -364,7 +519,7 @@
 </section>
 </main>
 
-<footer class="footer">
+<footer class="footer" id="footer">
 <div class="container footer-container">
 
     <div class="footer-top">
@@ -558,5 +713,5 @@ placeholder="tel"/>
 </form>    
 </div>
 </div>
-
+<script type="module" src="./main.js"></script>
 </body>
