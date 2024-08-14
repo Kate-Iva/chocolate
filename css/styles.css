@@ -1305,7 +1305,8 @@ letter-spacing: -0.02em;
 .footer-address-item + .footer-address-item {
     margin-top: 4px;
 }
-.footer-address-link {
+.footer-address-link:hover {
+    color: #FD9222;
 }
 
 .footer-bottom {
@@ -1377,6 +1378,10 @@ border: none;
 margin-left: 8px;
 }
 
+.footer-subscribe-btn:hover {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.235);
+}
 @media screen and (min-width: 768px) {
     .footer {
         padding-top: 50px;
